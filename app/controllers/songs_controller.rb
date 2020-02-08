@@ -43,12 +43,6 @@ class SongsController < ApplicationController
     redirect_to songs_path
   end
 
-  def self.artist_name
-    @song = Song.find(params[:id])
-    @name = @song.artist.name
-    @name
-  end
-
   private
 
   def song_params
